@@ -1,7 +1,6 @@
 package controllers
 
 import javax.inject._
-import play.api._
 import play.api.mvc._
 
 /**
@@ -20,5 +19,8 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
    */
   def index() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.index())
+  }
+  def product(productType: String, productNum: Int) = Action {
+    Ok(s"Product type is: $productType, product number is: $productNum ")
   }
 }
