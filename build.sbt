@@ -11,7 +11,7 @@ libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
 
 // Adds additional packages into Twirl
-//TwirlKeys.templateImports += "kaylee.controllers._"
+TwirlKeys.templateImports += "kaylee.controllers._"
 
 // Adds additional packages into conf/routes
-// play.sbt.routes.RoutesKeys.routesImport += "kaylee.binders._"
+ play.sbt.routes.RoutesKeys.routesImport += "kaylee.binders._"
