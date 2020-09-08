@@ -12,7 +12,7 @@ GET     /productRE/$prodType<[a-z]{2}\d\d>/:prodNum  controllers.HomeController.
 
 GET /login1 controllers.TaskList1.login
 GET /validateGet1 controllers.TaskList1.validateLoginGet(useranme, password)
-+ nocsrf
++nocsrf
 POST /validatePost1     controllers.TaskList1.validateLoginPost
 
 GET    /taskList1                   controllers.TaskList1.taskList
